@@ -63,7 +63,7 @@ const Shell: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/sales">Vendas</Link>
-          <Link to="/cart">Carrinho ({count})</Link>
+          <Link to="/cart" data-testid="cart-link">Carrinho ({count})</Link>
           <span className="muted">|</span>
           {userName ? (
             <span>Olá, {userName}</span>
